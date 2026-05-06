@@ -1,0 +1,101 @@
+# 📌 SOP: Google Form Email Automation System
+
+## 🎯 Objective
+
+To automate email notifications when a user action (checkbox selection) occurs in Google Sheets.
+
+---
+
+## 🧩 Step 1: Create Google Form
+
+* Add fields: Name, Email, Phone, Address
+* Link form responses to Google Sheets
+
+---
+
+## 📊 Step 2: Setup Google Sheet
+
+* Ensure columns:
+
+  * Full Name
+  * Email
+  * Status
+  * Order Placed (Checkbox)
+
+---
+
+## ☑️ Step 3: Add Checkbox
+
+* Select "Order Placed" column
+* Insert → Checkbox
+
+---
+
+## 💻 Step 4: Open Apps Script
+
+* Extensions → Apps Script
+
+---
+
+## 🧠 Step 5: Add Automation Script
+
+* Paste the onEdit function
+* Save the script
+
+---
+
+## 🔐 Step 6: Authorize Script
+
+* Run once manually
+* Allow all permissions
+
+---
+
+## 🔔 Step 7: Add Trigger
+
+* Function: onEdit
+* Event Source: From spreadsheet
+* Event Type: On edit
+
+---
+
+## ⚡ Step 8: Testing
+
+1. Fill the form
+2. Tick checkbox
+3. Verify email received
+4. Check status updated to "Sent"
+
+---
+
+## 🚨 Troubleshooting
+
+* Email not received → Check spam folder
+* Script not running → Verify trigger
+* Duplicate emails → Ensure status logic
+* Invalid email → Validate email column
+
+---
+
+## ✅ Expected Outcome
+
+* Email is sent instantly when checkbox is selected
+* Status updates automatically
+* No manual intervention required
+
+---
+
+## 📌 Maintenance Tips
+
+* Monitor script execution logs
+* Keep email template updated
+* Validate data regularly
+
+---
+
+## 📈 Future Enhancements
+
+* Approval & Rejection workflow
+* Dashboard integration (Power BI)
+* Multi-user access control
+* Email tracking system
